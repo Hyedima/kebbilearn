@@ -15,25 +15,24 @@ const OfficeTutor = () => {
 
   // Step 1 - Categories
   const categories = {
-    Office: [
-      "Word",
-      "Excel",
-      "PowerPoint",
-      "Outlook",
-      "OneNote",
-      "Publisher",
-      "Access",
+ 
+    "Brinin Kebbi": [
+      "Kauran Gwandu",
+      "History",
+      "Government",
+      "Ministries and Agencies",
+      "Tourist Attraction"
     ],
-    Military: [
-      //"Nigerian Military",
-      "Notable Operations",
-      "Military Technology & Equipment",
-      "Military Training Institutions",
-      //"Branches of the Armed Forces",
-      "Nigerian Army (NA)",
-      "Nigerian Navy (N)",
-      "Nigerian Air Force (NAF)",
-    ],
+    // Military: [
+    //   //"Nigerian Military",
+    //   "Notable Operations",
+    //   "Military Technology & Equipment",
+    //   "Military Training Institutions",
+    //   //"Branches of the Armed Forces",
+    //   "Nigerian Army (NA)",
+    //   "Nigerian Navy (N)",
+    //   "Nigerian Air Force (NAF)",
+    // ],
     "Civil Servant Tools": [
       "PDF Reader",
       "Document Scanner",
@@ -49,6 +48,15 @@ const OfficeTutor = () => {
       "Policy-Regulation Repository",
       "Templates for Reports",
       "Minutes of Meeting",
+    ],
+       Office: [
+      "Word",
+      "Excel",
+      "PowerPoint",
+      "Outlook",
+      "OneNote",
+      "Publisher",
+      "Access",
     ],
     "Student Tools": [
       "e-Library",

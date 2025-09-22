@@ -33,29 +33,29 @@
 //
 //
 
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
 
-let isConnected = false; // track connection
+// let isConnected = false; // track connection
 
-export async function connect() {
-  if (isConnected) {
-    console.log("✅ MongoDB already connected");
-    return;
-  }
+// export async function connect() {
+//   if (isConnected) {
+//     console.log("✅ MongoDB already connected");
+//     return;
+//   }
 
-  if (!process.env.MONGODB_URI) {
-    throw new Error("❌ MONGODB_URI not defined in .env.local");
-  }
+//   if (!process.env.MONGODB_URI) {
+//     throw new Error("❌ MONGODB_URI not defined in .env.local");
+//   }
 
-  try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
-      dbName: "bank-statement-converter",
-    });
+//   try {
+//     const conn = await mongoose.connect(process.env.MONGODB_URI, {
+//       dbName: "bank-statement-converter",
+//     });
 
-    isConnected = true;
-    console.log(`✅ MongoDB connected: ${conn.connection.host}`);
-  } catch (error) {
-    console.error("❌ MongoDB connection error:", error.message);
-    throw error;
-  }
-}
+//     isConnected = true;
+//     console.log(`✅ MongoDB connected: ${conn.connection.host}`);
+//   } catch (error) {
+//     console.error("❌ MongoDB connection error:", error.message);
+//     throw error;
+//   }
+// }
